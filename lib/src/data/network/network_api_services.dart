@@ -27,8 +27,6 @@ class  NetworkApiServices extends BaseApiServices{
       throw RequestTimeOut('');
     }
 
-
-
     return responseJson;
   }
 
