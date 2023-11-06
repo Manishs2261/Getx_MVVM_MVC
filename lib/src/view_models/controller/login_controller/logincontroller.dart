@@ -39,9 +39,15 @@ class LoginControlller extends GetxController{
               isLogin:  true,
             );
 
-            Utils.snackBar("Login", "login successfuly");
+
             userPreference.saveUser(loginModel).then((value) {
-              Get.offNamed(RoutesName.homeScreen);
+
+              Get.delete<LoginControlller>();
+              Get.offNamed(RoutesName.homeScreen)!.then((value) {
+
+                Utils.snackBar("Login", "login successfuly");
+              });
+
             }).onError((error, stackTrace) {
 
 

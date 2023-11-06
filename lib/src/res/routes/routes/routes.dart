@@ -10,7 +10,9 @@ class AppRoutes{
 
     //=======splash screeen ===========
     GetPage(name: RoutesName.SplashScreen,
-        page: ()=> SplashScreen(),transitionDuration: Duration(milliseconds: 250),transition: Transition.leftToRightWithFade),
+        page: ()=> SplashScreen(),
+        transitionDuration: Duration(milliseconds: 250),
+        transition: Transition.leftToRightWithFade),
 
 
    //============hoome screen===========
